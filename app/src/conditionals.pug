@@ -1,0 +1,18 @@
+extend layout
+block title
+  - var title='Conditionals'
+block content
+  h2 Conditionals
+  - var project = { technologies: 'pug sass es6' }
+  - var newTechnology = true
+  .project-details
+    if project.technologies
+      h6 Technologies
+      p.description= project.technologies
+    else if newTechnology
+      p.description.
+        New technologies are used in project. But not available now.
+    else
+      p No new technologies
+
+  div.note if-else statements with pug

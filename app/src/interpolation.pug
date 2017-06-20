@@ -1,0 +1,10 @@
+extend layout
+block title
+  - var title='Interpolation'
+block content
+  h2 Interpolation
+  - var teamName = 'Front End Engineering Design';
+  p Welcome to our, "#{teamName}" team session
+
+  div.note Here, the variable is, 
+    span.highlight #{teamName}

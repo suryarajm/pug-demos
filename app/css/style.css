@@ -7,9 +7,19 @@ ul, li {
   padding: 0;
 }
 
+body {
+  background-color: #7a85b0;
+  height: 100vh;
+}
+
+h1, h2, h3, h4,
+h5, h6 {
+  text-align: center;
+}
+
 header,
 footer {
-  background-color: #000;
+  background-color: #423869;
   color: #fff;
   height: auto;
   padding: 30px 0;
@@ -18,10 +28,51 @@ footer {
 }
 
 header {  
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 footer {
   position: fixed;
   bottom: 0;
+}
+
+.page-content {
+  background-color: #c8daf1;
+  color: #5c2474;
+  font-size: 28px;
+  height: auto;
+  margin: 50px auto;
+  padding: 40px;
+  width: 331px;
+}
+
+h2 {
+  margin-bottom: 38px;
+}
+
+.pug-links {
+  color: #3c074e;
+  text-decoration: none;   
+}
+
+.pug-lists {
+  margin-bottom: 20px;
+}
+
+.note {
+  color: #000;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.highlight {
+  color: #b80606;
+  font-weight: 600;
+}
+
+.table {
+  color: #3011ae;
+  margin: 0 auto;
+  width: 145px;
+  list-style: none;
 }
