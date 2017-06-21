@@ -5,14 +5,38 @@ block content
   h2 Conditionals
   - var project = { technologies: 'pug sass es6' }
   - var newTechnology = true
+  - var isUnless = false
   .project-details
     if project.technologies
-      h6 Technologies
-      p.description= project.technologies
+      h4 Technologies 
+        span.note (Title based on condition)
+      p.description= project.technologies   
+        span.note  (value of variable)
     else if newTechnology
       p.description.
         New technologies are used in project. But not available now.
     else
       p No new technologies
+    unless isUnless
+      p.highlight It is in unless
 
-  div.note if-else statements with pug
+  div.code
+    h3 Logic    
+    |- var project = { technologies: 'pug sass es6' }
+    br.
+    |
+    |- var newTechnology = true
+    br.
+    | if project.technologies {
+    br.
+    | Title is "Technologies"
+    br.
+    | description is value of technologies. i.e. "pug sass es6"
+    br.
+    | } else if newTechnology {
+    br.
+    | description is "New technologies are used in project. But not available now."    
+    br.
+    |} else {
+    br.
+    | Text is "No new technologies" }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mixins</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <header>
+      <figure class="logo"><a href="index.html"><img src="../images/pug-logo.svg" alt="pug logo"></a>
+        <figcaption> <a href="index.html">Pug features lists</a></figcaption>
+      </figure>
+      <h1>To learn Pug/Jade</h1>
+    </header>
+    <div class="page-wrapper"> 
+      <div class="page-content"><a class="page-navigation" href="mixins-demo2.html">Mixin Demo 2</a>
+        <h2>Mixin block with Arguments</h2>
+            <ul class="mixin-list-bar">
+              <h3 class="sidebar-head">Type of Mixins</h3>
+              <li>
+                <h6>Without Arguments</h6>
+                <p>mixin list</p>
+                <p>+list</p>
+              </li>
+              <li> 
+                <h6>With Arguments</h6>
+                <p>mixin pet(name)</p>
+                <p>+pet('cat')</p>
+              </li>
+              <li> 
+                <h6>Mixin Blocks</h6>
+                <p>mixin article(title)</p>
+                <p>+article('Hello world')</p>
+              </li>
+              <li> 
+                <h6>With unknown number of arguments</h6>
+                <p>mixin list(id, ...items)</p>
+                <p>+list('my-list', 1, 2, 3, 4)</p>
+              </li>
+            </ul>
+            <script>
+              $('.page-content').addClass('content-with-sidebar');
+              
+            </script>
+            <article>
+              <h3 class="title">JavaScript</h3>
+              <figure><img class="article-logo" src="../images/jslogo.jpg" alt="JavaScript">
+                <figcaption class="definition">An object-oriented computer programming language commonly used to create interactive effects within web browsers.</figcaption>
+              </figure>
+            </article>
+            <article>
+              <h3 class="title">CSS</h3>
+              <figure><img class="article-logo" src="../images/css3-logo.png" alt="CSS">
+                <figcaption class="definition">A style sheet language used for describing the presentation of a document written in a markup language.</figcaption>
+              </figure>
+            </article>
+            <article>
+              <h3 class="title">React</h3>
+              <figure><img class="article-logo" src="../images/react-logo.png" alt="React">
+                <figcaption class="definition">An open-source JavaScript library allows developers to create large web applications that use data which can change over time, without reloading the page</figcaption>
+              </figure>
+            </article>
+            <article>
+              <h3 class="title">AngularJS</h3>
+              <figure><img class="article-logo" src="../images/angularjs-logo.png" alt="AngularJS">
+                <figcaption class="definition">A structural framework for dynamic web apps.</figcaption>
+              </figure>
+            </article>
+      </div>
+    </div>
+    <footer>Developed by Surya Raj M</footer>
+  </body>
+</html>

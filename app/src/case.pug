@@ -1,0 +1,42 @@
+extend layout
+block title
+  - var title='Case'
+block content
+  h2 Pug Case
+  ul.card(class='case')
+    li
+      - var friends = 10
+      h5 Case-1  Friends = #{friends}
+      case friends
+        when 0
+          p You have no friends
+        when 1
+          p You have a friend
+        default
+          p You have #{friends} friends
+    li
+      - var friends = 0
+      h5 Case-2  Friends = #{friends}
+      case friends
+        when 0
+        when 1
+          p You have very few friends
+        default
+          p You have #{friends} friends 
+    li
+      - var friends = 0
+      h5 Case-3  No output for 0
+      case friends
+        when 0
+          - break
+        when 1
+          p You have very few friends
+        default
+          p You have #{friends} friends 
+    li
+      - var friends = 1
+      h5 Case-4  ":" is used in code
+      case friends
+        when 0: p You have no friends
+        when 1: p You have a friend
+        default: p You have #{friends} friends

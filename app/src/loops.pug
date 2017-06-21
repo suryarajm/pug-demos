@@ -1,0 +1,10 @@
+extend layout
+block title
+  - var title='Loops'
+block content
+  h2 Loops
+  - var templateEngines = ['Pug', 'Vash', 'EJS', 'Mustache', 'Dust', 'Nunjucks', 'Handlebars', 'atpl', 'Haml'];
+  h4 Template Engines
+  ul.card
+    for name in templateEngines    
+      li= name

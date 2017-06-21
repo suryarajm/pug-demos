@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mixins</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <header>
+      <figure class="logo"><a href="index.html"><img src="../images/pug-logo.svg" alt="pug logo"></a>
+        <figcaption> <a href="index.html">Pug features lists</a></figcaption>
+      </figure>
+      <h1>To learn Pug/Jade</h1>
+    </header>
+    <div class="page-wrapper"> 
+      <div class="page-content"><a class="page-navigation" href="mixins-demo.html">Mixin Demo 1</a>
+        <h2>Mixin block with Rest Arguments  </h2>
+            <ul class="mixin-list-bar">
+              <h3 class="sidebar-head">Type of Mixins</h3>
+              <li>
+                <h6>Without Arguments</h6>
+                <p>mixin list</p>
+                <p>+list</p>
+              </li>
+              <li> 
+                <h6>With Arguments</h6>
+                <p>mixin pet(name)</p>
+                <p>+pet('cat')</p>
+              </li>
+              <li> 
+                <h6>Mixin Blocks</h6>
+                <p>mixin article(title)</p>
+                <p>+article('Hello world')</p>
+              </li>
+              <li> 
+                <h6>With unknown number of arguments</h6>
+                <p>mixin list(id, ...items)</p>
+                <p>+list('my-list', 1, 2, 3, 4)</p>
+              </li>
+            </ul>
+            <script>
+              $('.page-content').addClass('content-with-sidebar');
+              
+            </script>
+            <ul id="my-pattern">
+              <li>1</li><br>
+              <li>2</li>
+              <li>2</li><br>
+              <li>3</li>
+              <li>3</li>
+              <li>3</li><br>
+              <li>4</li>
+              <li>4</li>
+              <li>4</li>
+              <li>4</li><br>
+              <li>5</li>
+              <li>5</li>
+              <li>5</li>
+              <li>5</li>
+              <li>5</li><br>
+              <li>6</li>
+              <li>6</li>
+              <li>6</li>
+              <li>6</li>
+              <li>6</li>
+              <li>6</li><br>
+              <li>7</li>
+              <li>7</li>
+              <li>7</li>
+              <li>7</li>
+              <li>7</li>
+              <li>7</li>
+              <li>7</li><br>
+              <li>8</li>
+              <li>8</li>
+              <li>8</li>
+              <li>8</li>
+              <li>8</li>
+              <li>8</li>
+              <li>8</li>
+              <li>8</li><br>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li>
+              <li>9</li><br>
+            </ul>
+      </div>
+    </div>
+    <footer>Developed by Surya Raj M</footer>
+  </body>
+</html>

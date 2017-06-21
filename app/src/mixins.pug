@@ -1,0 +1,35 @@
+mixin mixin-list
+  ul.mixin-list-bar
+    h3.sidebar-head Type of Mixins
+    li
+      h6 Without Arguments
+      p mixin list
+      p +list
+    li 
+      h6 With Arguments
+      p mixin pet(name)
+      p +pet('cat')
+    li 
+      h6 Mixin Blocks
+      p mixin article(title)
+      p +article('Hello world')
+    li 
+      h6 With unknown number of arguments
+      p mixin list(id, ...items)
+      p +list('my-list', 1, 2, 3, 4)
+  script.
+    $('.page-content').addClass('content-with-sidebar');
+
+mixin article(subTitle, definition, logoPath)
+  article
+    h3.title #{subTitle}
+    figure
+      img.article-logo(src=logoPath, alt=subTitle)        
+      figcaption.definition #{definition}
+
+mixin numberPatterns(id, ...items)
+  ul(id=id)
+    each item in items
+      -for(var i = 1; i <= item; i ++)
+        li= item   
+      br.

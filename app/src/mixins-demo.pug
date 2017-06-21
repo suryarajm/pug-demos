@@ -1,0 +1,16 @@
+extend layout
+include mixins
+block title
+  - var title='Mixins'
+block content
+  a.page-navigation(href='mixins-demo2.html') Mixin Demo 2
+  h2 Mixin block with Arguments
+  +mixin-list
+  - var definition = 'An object-oriented computer programming language commonly used to create interactive effects within web browsers.'
+  +article('JavaScript', definition, '../images/jslogo.jpg')
+  - var definition = 'A style sheet language used for describing the presentation of a document written in a markup language.'
+  +article('CSS', definition, '../images/css3-logo.png')
+  - var definition = 'An open-source JavaScript library allows developers to create large web applications that use data which can change over time, without reloading the page'
+  +article('React', definition, '../images/react-logo.png')
+  - var definition = 'A structural framework for dynamic web apps.'
+  +article('AngularJS', definition, '../images/angularjs-logo.png')

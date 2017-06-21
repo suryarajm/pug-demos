@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conditionals</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
     <header>
+      <figure class="logo"><a href="index.html"><img src="../images/pug-logo.svg" alt="pug logo"></a>
+        <figcaption> <a href="index.html">Pug features lists</a></figcaption>
+      </figure>
       <h1>To learn Pug/Jade</h1>
     </header>
-    <div class="page-content">
-      <h2>Conditionals</h2>
-      <div class="project-details">
-        <h6>Technologies</h6>
-        <p class="description">pug sass es6</p>
+    <div class="page-wrapper"> 
+      <div class="page-content">
+        <h2>Conditionals</h2>
+        <div class="project-details">
+          <h4>Technologies <span class="note">(Title based on condition)</span></h4>
+          <p class="description">pug sass es6<span class="note"> (value of variable)</span></p>
+          <p class="highlight">It is in unless</p>
+        </div>
+        <div class="code">
+          <h3>Logic    </h3>- var project = { technologies: 'pug sass es6' }<br>
+          - var newTechnology = true<br>if project.technologies {<br>Title is "Technologies"<br>description is value of technologies. i.e. "pug sass es6"<br>} else if newTechnology {<br>description is "New technologies are used in project. But not available now."    <br>} else {<br>Text is "No new technologies" }
+        </div>
       </div>
-      <div class="note">if-else statements with pug</div>
     </div>
     <footer>Developed by Surya Raj M</footer>
-    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
   </body>
 </html>

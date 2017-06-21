@@ -17,6 +17,10 @@ h5, h6 {
   text-align: center;
 }
 
+p {
+  margin: 10px 0;
+}
+
 header,
 footer {
   background-color: #423869;
@@ -31,9 +35,17 @@ header {
   text-transform: uppercase;
 }
 
+header h1 {
+  font-size: 38px;
+}
+
 footer {
-  position: fixed;
-  bottom: 0;
+  font-size: 16px;  
+}
+
+.page-wrapper {
+  min-height: calc(100% - 182px);
+  overflow: auto;
 }
 
 .page-content {
@@ -41,13 +53,15 @@ footer {
   color: #5c2474;
   font-size: 28px;
   height: auto;
-  margin: 50px auto;
-  padding: 40px;
-  width: 331px;
+  margin: 60px auto;
+  overflow: hidden;
+  padding: 27px 40px;
+  width: 563px;
 }
 
 h2 {
-  margin-bottom: 38px;
+  font-size: 34px;
+  margin-bottom: 15px;
 }
 
 .pug-links {
@@ -75,4 +89,135 @@ h2 {
   margin: 0 auto;
   width: 145px;
   list-style: none;
+}
+
+.logo {
+  left: 10px;
+  position: absolute;
+  top: -27px;    
+}
+
+.logo a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.code {
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  line-height: 29px;
+  padding: 13px;
+}
+
+.card {
+  margin-top: 32px;
+  height: auto;
+  overflow: hidden;
+}
+
+.card li {
+  background-color: #aea11b;
+  color: #760a65;  
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 7px 20px;    
+  width: auto;
+}
+
+.case li{
+  height: 100px;
+  width: 40%;
+}
+
+.case p {
+  color: #041a7f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mixin-list-bar {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  list-style: none;
+  left: 0;
+  max-height: calc(100% - 321px);
+  overflow: auto;
+  padding: 25px 20px 10px 30px;
+  position: absolute;
+  text-align: left;
+  top: 165px;
+  width: 183px;
+}
+
+.mixin-list-bar h6 {
+  font-size: 18px;
+  text-align: left;
+}
+
+.mixin-list-bar p {
+  font-size: 16px;
+}
+
+.sidebar-head {
+  margin-bottom: 17px;
+}
+
+article {
+  background-color: #fff;
+  color: #000;
+  float: left;
+  height: 292px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-right: 3%;  
+  padding: 20px 0;  
+  text-align: center;
+  width: 47%;
+}
+
+.article-logo {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.definition {
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1199px) {
+  .content-with-sidebar {
+    margin-left: 267px;
+  }
+}
+
+.page-navigation {
+  color: #086608;
+  display: block;
+  float: right;
+  font-size: 16px;
+  font-style: italic;    
+  margin-top: -19px;    
+  width: auto;
+}
+
+#my-pattern {
+  background-color: #a1c4ed;
+  color: red;
+  padding: 20px;  
+  width: auto;    
+}
+
+#my-pattern li {
+  float: left;
+  list-style: none;
+  margin-right: 25px;
 }
